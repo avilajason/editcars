@@ -1,0 +1,48 @@
+ <template name="tEditCar">
+
+  <form class="form-horizontal">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend></legend>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="Brand"></label>
+      <div class="controls">
+        <input name="brand" type="text" placeholder="Brand" class="input-large" value="{{brand}}">
+        
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="Model"></label>
+      <div class="controls">
+        <input name="model" type="text" placeholder="Model" class="input-large" value="{{model}}">
+        
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="Year"></label>
+      <div class="controls">
+        <input name="year" type="text" placeholder="Year" class="input-large" value="{{year}}">
+        
+      </div>
+    </div>
+
+    <!-- Button (Double) -->
+    <div class="control-group">
+      <label class="control-label" for="Submit"></label>
+      <div class="controls">
+        <input type="submit" value="update" class="btn btn-success">
+        <!-- <a href="{{pathFor 'tCars'}}" id="updateCar" name="updateCar  " class="btn btn-success">Update</a> -->
+        <a href="{{pathFor 'tCars'}}" id="cancelCarEdit" name="cancelCarEdit" class="btn btn-danger cancel">Cancel</a>
+      </div>
+    </div>
+
+    </fieldset>
+  </form>
+</template>

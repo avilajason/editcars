@@ -1,0 +1,21 @@
+<template name="tCars">
+
+  <!-- <p><em>{{cCars.count}} Cars this year</em></p> -->
+  <table class="table table-condensed table-striped table-bordered">
+
+  <thead>
+      <tr><th>Brand</th><th>Model</th><th>Year</th><th></th><th></th></tr>
+  </thead>
+
+  <tbody>
+    {{#if cCars.count}}
+      {{#each cCars}}
+        <tr><td>{{brand}}</td><td>{{model}}</td><td>{{year}}</td><td><a href="{{pathFor 'tEditCar'}}">edit</a></td><td><a class="remove">delete</a></td></tr>
+      {{/each}}
+    {{else}}
+      <li><a class='btn-add-cars'>Add Some cars!</a></li>
+    {{/if}}
+  </tbody>
+
+  </table>
+</template>
